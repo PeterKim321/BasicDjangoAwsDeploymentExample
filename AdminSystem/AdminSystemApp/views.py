@@ -3,5 +3,15 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(request):
-    return HttpResponse("This is reeeeeeeeeeeeeeeeee")
+def home(request):
+    return render(request, "home.html")
+
+def cadets(request):
+    return render(request, "cadets.html")
+
+def role_marking(request):
+    return render(request, "role_marking.html")
+
+def cash_box(request):
+    return render(request, "cash_box.html")
+

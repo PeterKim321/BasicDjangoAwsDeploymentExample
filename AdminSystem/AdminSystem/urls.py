@@ -19,5 +19,8 @@ from AdminSystemApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index')
+    path('', views.home, name='home'),
+    path('cadets/', views.cadets, name='cadets'),
+    path('role_marking/', views.role_marking, name='role_marking'),
+    path('cash_box/', views.cash_box, name='cash_box'),
 ]
